@@ -1,0 +1,23 @@
+@import "tailwindcss";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.box {
+  @apply mx-auto mt-20 w-96 h-10 text-center 
+         border border-gray-400 rounded-lg shadow-md 
+         bg-blue-400 p-1.5 font-sans flex items-center justify-between text-white;
+}
+
+.box h1 {
+  @apply text-lg font-semibold px-9;
+}
+
+.component {
+  @apply  mx-auto mt-10 w-96 h-40 text-center 
+         border border-gray-400 rounded-lg shadow-md 
+         bg-green-200 p-4 font-sans text-black;
+}
