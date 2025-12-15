@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.list-container li {
+  @apply border border-gray-300 py-2 px-5 mb-2 rounded flex items-center;
+}
+
+.list-container input[type="checkbox"] {
+  @apply mr-4;
+}
+.list-task {
+  @apply flex justify-between w-full;
+}
+.task-desc {
+  @apply flex;
+}
+
+.task-desc div {
+  @apply mr-4;
+}
