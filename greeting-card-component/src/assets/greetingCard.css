@@ -1,0 +1,43 @@
+.container {
+  max-width: 350px;
+  margin: auto;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.container h1 {
+  margin-top: 0;
+}
+
+.light {
+  background-color: rgb(152, 204, 241);
+}
+
+.dark {
+  background-color: rgb(25, 40, 70);
+}
+
+.summery-l {
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.summery-d {
+  background-color: #134e4a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+.nav {
+  margin-top: 20px;
+}
