@@ -21,8 +21,8 @@ function App() {
 
   return (
     <>
+      {disk[0]+ disk[1] === 7 ? <h1>You Win!</h1>: <h1></h1>}
       <div className="main-container">
-        {disk[0] + disk[1] === 7 ? <h1>You Win!</h1> : <h1></h1>}
         <div className="container">
           <div className="disk-rotation">
             <p>{disk[0]}</p>

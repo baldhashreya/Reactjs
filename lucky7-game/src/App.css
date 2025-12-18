@@ -4,3 +4,23 @@
   padding: 2rem;
   text-align: center;
 }
+
+.disk-rotation {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.disk-rotation p {
+  background-color: darkslategray;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.main-container {
+  border: 2px solid white;
+  padding: 50px;
+  border-radius: 15px;
+}
