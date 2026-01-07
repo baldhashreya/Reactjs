@@ -8,7 +8,7 @@
   @apply mr-4;
 }
 .list-task {
-  @apply flex justify-between w-full;
+  @apply flex justify-around w-full;
 }
 .task-desc {
   @apply flex;
@@ -16,4 +16,8 @@
 
 .task-desc div {
   @apply mr-4;
+}
+
+.add-task {
+  @apply mx-auto justify-center mb-5 flex p-2 bg-blue-500 rounded-full w-10;
 }
