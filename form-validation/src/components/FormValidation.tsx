@@ -5,8 +5,19 @@ export function FormValidation({ setItems }) {
     productName: "",
     Quantity: "",
   });
+  const [isValidName, setIsValidName] = useState(true);
+  const validateForm = (name: string) => {
+    console.log(name);
+    console.log(name.length);
+    if (!name || name.length < 3) {
+      setIsValidName(false);
+    } else {
+      setIsValidName(true);
+    }
+  };
 
   const handleChange = (e) => {
+    validateForm(e.target.value);
     setFromData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -16,7 +27,7 @@ export function FormValidation({ setItems }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setItems(prev => [
+    setItems((prev) => [
       ...prev,
       {
         productName: formData.productName,
@@ -29,7 +40,6 @@ export function FormValidation({ setItems }) {
       Quantity: "",
     });
   };
-
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -38,20 +48,24 @@ export function FormValidation({ setItems }) {
         placeholder="product name"
         value={formData.productName}
         onChange={handleChange}
-        required
+        // required
       />
-
+      {!isValidName ? <p>Invalid name</p> : null}
       <input
         type="number"
         name="Quantity"
         placeholder="Quantity"
         value={formData.Quantity}
         onChange={handleChange}
-        required
-        min="1"
+        // required
+        // min="1"
       />
-
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        disabled={!isValidName}
+      >
+        Submit
+      </button>
     </form>
   );
 }
